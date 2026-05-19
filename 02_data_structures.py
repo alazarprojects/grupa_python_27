@@ -135,3 +135,5 @@ print(True == 1)
 # True si 1 sunt vazute ca si aceeasi valoare, si faptul ca sunt folosite ca si cheie
 
 print() # un spatiu gol, ca si un endline
+
+print("End of file")

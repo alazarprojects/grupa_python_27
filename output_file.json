@@ -1,0 +1,14 @@
+{
+  "data": [
+    50,
+    100,
+    300,
+    "hello"
+  ],
+  "title": "My love story",
+  "author": "Ms Jackson",
+  "extra_data": [
+    "I'm sorry",
+    "Ms Jackson"
+  ]
+}

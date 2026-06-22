@@ -1,0 +1,74 @@
+[
+  {
+    "nume": "Curatenie generala in apartament",
+    "data_limita": "25.06.2026 18:00",
+    "responsabil": "Mihai",
+    "categorie": "Acasa"
+  },
+  {
+    "nume": "Spalat haine si organizat dulapul",
+    "data_limita": "23.06.2026 20:00",
+    "responsabil": "Irina",
+    "categorie": "Acasa"
+  },
+  {
+    "nume": "Plata facturi utilitati",
+    "data_limita": "26.06.2026 21:00",
+    "responsabil": "Mihai",
+    "categorie": "Viata-de-zi-cu-zi"
+  },
+  {
+    "nume": "Pregatire raport lunar",
+    "data_limita": "28.06.2026 12:00",
+    "responsabil": "Mihai",
+    "categorie": "Munca"
+  },
+  {
+    "nume": "Revizuire cod proiect",
+    "data_limita": "27.06.2026 16:00",
+    "responsabil": "Bogdan",
+    "categorie": "Munca"
+  },
+  {
+    "nume": "Participare sedinta echipa",
+    "data_limita": "24.06.2026 10:00",
+    "responsabil": "George",
+    "categorie": "Munca"
+  },
+  {
+    "nume": "Programare dentist",
+    "data_limita": "29.06.2026 15:00",
+    "responsabil": "Irina",
+    "categorie": "Sanatate"
+  },
+  {
+    "nume": "Control medical anual",
+    "data_limita": "30.06.2026 09:00",
+    "responsabil": "Mihai",
+    "categorie": "Sanatate"
+  },
+  {
+    "nume": "Economisire pentru vacanta",
+    "data_limita": "01.07.2026 12:00",
+    "responsabil": "George",
+    "categorie": "Financiar"
+  },
+  {
+    "nume": "Curs Python online",
+    "data_limita": "05.07.2026 18:00",
+    "responsabil": "Bogdan",
+    "categorie": "Educatie"
+  },
+  {
+    "nume": "Intalnire prieteni",
+    "data_limita": "27.06.2026 19:00",
+    "responsabil": "Irina",
+    "categorie": "Social"
+  },
+  {
+    "nume": "Arhivare documente",
+    "data_limita": "03.08.2026 14:00",
+    "responsabil": "Bogdan",
+    "categorie": "Administrativ"
+  }
+]

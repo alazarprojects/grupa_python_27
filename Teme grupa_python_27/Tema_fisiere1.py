@@ -2,7 +2,6 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-from pprint import pprint
 def write_list_data(file_name, items):
     with open(file_name, 'w', encoding='utf-8') as f:
         for item in items:

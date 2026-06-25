@@ -32,9 +32,10 @@ class Task:
         self.date = date
         self.owner = owner
         self.category = category
+        self.completed = False
 
     def __str__(self):
-        return f"{self.title}, {self.date}, {self.owner}, {self.category}"
+        return f"{self.title}, {self.date}, {self.owner}, {self.category}, completed = {self.completed}?"
 
     def __repr__(self):
         return f'Task("{self.title}", "{self.date}", "{self.owner}", {self.category})'
@@ -47,12 +48,17 @@ task2 = Task("Spalat Vase", "23.Iunie", "John", Categories.WORK)
 
 task3 = Task("Buy shoes", "24.Iunie", "Olivia", Categories.SHOPPING)
 
-# todo = [task1, task2, task3]
-
 
 class Todos:
     def __init__(self):
         self.todos_list = []
+
+    #property, this is just like a class attribute, that gets calculated whenever it's read.
+    # if a programmer writes todos1.task_count, the value gets calculated on the spot, every time this property is read.
+    @property
+    def task_count(self):
+        return len(self.todos_list)
+
 
     def add_task(self, add_task):
         for task in self.todos_list:
@@ -65,6 +71,18 @@ class Todos:
         for task in self.todos_list:
             if task == task_to_delete:
                 self.todos_list.remove(task)
+
+    def mark_as_completed(self, task: Task):
+        task.completed = True
+
+    def filter_by_completed(self, is_completed: bool):
+        results = []
+        for task in self.todos_list:
+            if task.completed == is_completed:
+                results.append(task)
+        return results
+
+
 
     def filter_by_category(self, categ):
         results = []
@@ -96,6 +114,28 @@ todos1.add_task(task1)
 todos1.add_task(task2)
 todos1.add_task(task3)
 todos1.add_task(Task("Go to second-hand store", "25.June", "Olivia", Categories.SHOPPING))
+
+print(task1)
+todos1.mark_as_completed(task1)
+print(task1)
+
+
+print("========Tasks filtered by completed:")
+print(todos1.filter_by_completed(True))
+
+
+print("================")
+
+todos1.add_task(Task("Write a poem", "Today", "Olivia", Categories.PRESENTS))
+
+print("=========== Task count ========")
+print(len(todos1.todos_list))
+print(todos1.task_count)
+print("============")
+
+
+
+
 print(todos1)
 
 todos1.remove_task(task2)
